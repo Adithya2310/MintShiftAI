@@ -9,30 +9,6 @@ MintShift AI is an **intelligent NFT automation agent** designed to streamline *
 
 With MintShift AI, creators can **focus on innovation** while AI handles marketing and engagement—**driving visibility, community growth, and sales.**
 
-Bold
-Italic
-Underline
-
-- Header -
-
-- Font Size -
-Bullet Points
-Numbering
-Technologies Used
-1. Frontend & API
-Next.js – Used for building the user interface and handling API actions.
-
-2. Database & Storage
-Supabase – Stores collection details, NFT metadata, and Twitter API credentials securely.
-
-3. AI Integration & Automation
-Move Agent Kit – Enables AI-driven automation for NFT-related tasks and engagement.
-
-Gemini AI – Used for AI-generated tweet descriptions, NFT metadata, and content generation.
-
-4. Blockchain Integration
-Move TS SDK – Handles all blockchain-related interactions for minting, trading, and NFT data retrieval.
-
 # Technologies Used
 
 ### 1\. **Frontend & API**
