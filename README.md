@@ -1,4 +1,4 @@
-# MintShiftAI
+# MintShiftAI - Mint, tweet, trade—in autopilot mode
 MintShift AI is an **intelligent NFT automation agent** designed to streamline **minting, promotion, and trading** on the Move blockchain. It integrates AI-powered tools to:
 
 # Features
