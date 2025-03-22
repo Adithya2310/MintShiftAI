@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 180 100% 50%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 300 100% 50%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 270 83% 53%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 180 100% 50%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border selection:bg-neon-blue/20 selection:text-white;
+  }
+  
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-dark-bg text-white font-exo antialiased;
+    background-image: 
+      radial-gradient(circle at 50% 50%, rgba(10, 10, 15, 0.9) 0%, rgba(5, 5, 10, 1) 100%),
+      linear-gradient(rgba(0, 255, 255, 0.05) 1px, transparent 1px), 
+      linear-gradient(90deg, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 100% 100%, 30px 30px, 30px 30px;
+    background-position: 0 0, 15px 15px, 15px 15px;
+  }
+}
+
+@layer utilities {
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  .neon-border-blue {
+    @apply border border-neon-blue relative;
+    box-shadow: 0 0 5px theme('colors.neon-blue'), 0 0 10px theme('colors.neon-blue');
+  }
+  
+  .neon-border-purple {
+    @apply border border-neon-purple relative;
+    box-shadow: 0 0 5px theme('colors.neon-purple'), 0 0 10px theme('colors.neon-purple');
+  }
+  
+  .neon-border-pink {
+    @apply border border-neon-pink relative;
+    box-shadow: 0 0 5px theme('colors.neon-pink'), 0 0 10px theme('colors.neon-pink');
+  }
+  
+  .text-glow-blue {
+    text-shadow: 0 0 5px theme('colors.neon-blue'), 0 0 10px theme('colors.neon-blue');
+  }
+  
+  .text-glow-purple {
+    text-shadow: 0 0 5px theme('colors.neon-purple'), 0 0 10px theme('colors.neon-purple');
+  }
+  
+  .text-glow-pink {
+    text-shadow: 0 0 5px theme('colors.neon-pink'), 0 0 10px theme('colors.neon-pink');
+  }
+
+  .neon-gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(
+      90deg,
+      theme('colors.neon-blue'),
+      theme('colors.neon-purple'),
+      theme('colors.neon-pink'),
+      theme('colors.neon-blue')
+    );
+    background-size: 200% auto;
+    animation: background-pan 3s linear infinite;
+  }
+
+  .glass-card {
+    @apply bg-darker-bg/80 backdrop-blur-lg border border-white/10 rounded-xl;
+  }
+
+  .neon-card {
+    @apply relative bg-darker-bg overflow-hidden rounded-xl;
+  }
+
+  .neon-card::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, 
+      theme('colors.neon-blue'), 
+      theme('colors.neon-purple'), 
+      theme('colors.neon-pink'), 
+      theme('colors.neon-blue'));
+    z-index: -1;
+    border-radius: inherit;
+    background-size: 400%;
+    animation: background-pan 3s linear infinite;
+  }
+
+  .neon-card-content {
+    @apply bg-darker-bg p-4 h-full rounded-xl relative z-10;
+  }
+}
