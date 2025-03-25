@@ -48,7 +48,7 @@ const NFTCard: React.FC<NFTCardProps> = ({ nft, onBuy }) => {
           <div className="flex justify-between items-center mt-3">
             <div className="font-orbitron text-neon-blue">
               <span className="text-xs text-white/50">Price</span>
-              <div className="text-lg">{nft.price} ETH</div>
+              <div className="text-lg">{nft.price} APT</div>
             </div>
             <Button variant="gradient" size="sm" onClick={onBuy}>
               Buy Now

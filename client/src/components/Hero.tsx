@@ -75,7 +75,7 @@ const Hero = () => {
                       <div className="w-6 h-6 rounded-full bg-neon-blue/30"></div>
                       <span className="ml-2 text-sm text-white/70">@neon_creator</span>
                     </div>
-                    <div className="text-neon-blue font-orbitron">4.2 ETH</div>
+                    <div className="text-neon-blue font-orbitron">4.2 APT</div>
                   </div>
                 </div>
               </div>

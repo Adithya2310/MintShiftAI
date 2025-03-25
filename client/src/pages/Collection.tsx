@@ -135,7 +135,7 @@ const Collection = () => {
   const handleBuyNFT = async (nft: NFT) => {
     uiToast({
       title: "Purchase initiated",
-      description: `You're purchasing ${nft.name} for ${nft.price} ETH`,
+      description: `You're purchasing ${nft.name} for ${nft.price} APT`,
     });
     
     // In a real app, this would trigger a blockchain transaction

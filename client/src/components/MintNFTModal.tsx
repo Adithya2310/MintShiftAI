@@ -156,7 +156,7 @@ const MintNFTModal: React.FC<MintNFTModalProps> = ({ isOpen, onClose, collection
             
             <div>
               <label htmlFor="price" className="block text-sm font-medium text-white/70 mb-1 font-orbitron">
-                Price (ETH)*
+                Price (APT)*
               </label>
               <input
                 type="number"
